@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imgClick = (ImageView)findViewById(R.id.imageView);
+        imgClick = findViewById(R.id.imageView);
 
         imgClick.setOnClickListener(new View.OnClickListener() {
             int count=0;
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     if(random>=0.5){
                         imgClick.setImageResource(R.drawable.image_do);
                     }else{
+                        //GIT TEST
                         imgClick.setImageResource(R.drawable.image_dont);
                     }
                 }
